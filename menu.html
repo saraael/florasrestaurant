@@ -1,0 +1,677 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flora's African Restaurant Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <section class="header">
+        <a href="#" class="logo">
+            <i class="fas fa-utensils"></i> Flora's Restaurant
+        </a>
+        <nav class="nav-bar">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="menu.html">Menu</a>
+            <a href="reviews.html">Reviews</a>
+            <a href="contact.html">Contact</a>
+            <!-- Cart Icon -->
+            <div id="cart-icon" class="cart-icon">
+                <span class="cart-icon-text">🛒</span>
+                <span id="cart-count" class="cart-count">0</span>
+            </div>
+        </nav>
+        <div id="menu-btn" class="fas fa-bars"></div>
+    </section>
+
+    <!-- Secondary Navigation for About Page -->
+    <nav class="nav-about">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="menu.html">Menu</a></li>
+        </ul>
+    </nav>
+
+    <!-- Menu Section -->
+    <section class="menu" id="menu">
+        <div class="heading">
+            <span class="menu-title">Our Menu</span>
+        </div>
+
+        <!-- Combo Meals -->
+        <h2>Combo Meals</h2>
+        <div class="menu-slider">
+
+
+            <div class="slide">
+                <div class="box-container">
+                    <div class="box">
+                        <h3>Swallow and soup</h3>
+                        <img src="photos/Popular Nigerian Swallows t.jpg" alt="Swallow and soup">
+                        <p>This combo includes <br>any swallow of your choosing
+                          <br> excluding Garri and fufu <br>with any soup and<br> your meat of choice.</p>
+                        <div class="price">From 800₹</div>
+                        <span id="love-count" class="love-count">
+                          <i class="fas fa-heart love-icon-text"></i>
+                        </span>
+                        <button class="add-to-cart-button">Add to Cart</button>
+                        <a href="https://wa.me/qr/PHYYQKIWBXKUD1" class="btn">Order Now</a>
+                    </div>
+                    <div class="box">
+                        <h3>Rice and Stew</h3>
+                        <img src="photos/rice and  Stew.jpg" alt="Rice and Stew">
+                        <p>This combo includes 
+                          <br>white rice and stew<br>
+                           or soup and any meat of choice.</p>
+                        <div class="price">From 800₹</div>
+                        <span id="love-count" class="love-count">
+                          <i class="fas fa-heart love-icon-text"></i>
+                        </span>
+                        <button class="add-to-cart-button">Add to Cart</button>
+                        <a href="https://wa.me/qr/PHYYQKIWBXKUD1" class="btn">Order Now</a>
+                    </div>
+                    <div class="box">
+                        <h3>Protein and Complement</h3>
+                        <img src="photos/fish and plantain .jpg" alt="Protein and Complement">
+                        <p>This combo usually includes<br>
+                           fried protein (e.g., fish or chicken)<br> with a side of potato fries<br> and plantain chips.</p>
+                        <div class="price">From 800₹</div>
+                        <span id="love-count" class="love-count">
+                          <i class="fas fa-heart love-icon-text"></i>
+                        </span>
+                        <button class="add-to-cart-button">Add to Cart</button>
+                        <a href="https://wa.me/qr/PHYYQKIWBXKUD1" class="btn">Order Now</a>
+                    </div>
+                    <div class="box">
+                        <h3>Barbecue</h3>
+                        <img src="photos/bbq and fries.jpeg" alt="Barbecue">
+                        <p>This combo includes barbecue<br> and a side of your choice.</p>
+                        <div class="price">From 800₹</div>
+                        <span id="love-count" class="love-count">
+                          <i class="fas fa-heart love-icon-text"></i>
+                        </span>
+                        <button class="add-to-cart-button">Add to Cart</button>
+                        <a href="https://wa.me/qr/PHYYQKIWBXKUD1" class="btn">Order Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Soups & Stews -->
+        <h2>Soups & Stews</h2>
+        <div class="menu-slider">
+            <div class="slide">
+                <div class="box-container">
+                    <!-- Soup Boxes -->
+                    <div class="box">
+                        <h3>Ogbono Soup</h3>
+                        <img src="photos/Ogbono.jpg" alt="Ogbono Soup">
+                        <div class="price">From 800₹</div>
+                        <span id="love-count" class="love-count">
+                          <i class="fas fa-heart love-icon-text"></i>
+                        </span>
+                        <button class="add-to-cart-button">Add to Cart</button>
+                        <a href="https://wa.me/qr/PHYYQKIWBXKUD1" class="btn">Order Now</a>
+                    </div>
+                    <div class="box">
+                        <h3>Vegetable Soup</h3>
+                        <img src="photos/vegetables .jpg" alt="Vegetable Soup">
+                        <div class="price">From 800₹</div>
+                        <span id="love-count" class="love-count">
+                          <i class="fas fa-heart love-icon-text"></i>
+                        </span>
+                        <button class="add-to-cart-button">Add to Cart</button>
+                        <a href="https://wa.me/qr/PHYYQKIWBXKUD1" class="btn">Order Now</a>
+                    </div>
+                    <div class="box">
+                        <h3>Okra Soup</h3>
+                        <img src="photos/okra.png" alt="Okra Soup">
+                        <div class="price">From 800₹</div>
+                        <span id="love-count" class="love-count">
+                          <i class="fas fa-heart love-icon-text"></i>
+                        </span>
+                        <button class="add-to-cart-button">Add to Cart</button>
+                        <a href="https://wa.me/qr/PHYYQKIWBXKUD1" class="btn">Order Now</a>
+                    </div>
+                    <div class="box">
+                        <h3>Banga Soup</h3>
+                        <img src="photos/banga soup with .jpg" alt="Banga Soup">
+                        <div class="price">From 800₹</div>
+                        <span id="love-count" class="love-count">
+                          <i class="fas fa-heart love-icon-text"></i>
+                        </span>
+                        <button class="add-to-cart-button">Add to Cart</button>
+                        <a href="https://wa.me/qr/PHYYQKIWBXKUD1" class="btn">Order Now</a>
+                    </div>
+                    <div class="box">
+                        <h3>Eru</h3>
+                        <img src="photos/eru .jpg" alt="Eru">
+                        <div class="price">From 2500₹</div>
+                        <span id="love-count" class="love-count">
+                          <i class="fas fa-heart love-icon-text"></i>
+                        </span>
+                        <button class="add-to-cart-button">Add to Cart</button>
+                        <a href="https://wa.me/qr/PHYYQKIWBXKUD1" class="btn">Order Now</a>
+                    </div>
+                    <div class="box">
+                        <h3>Ndole</h3>
+                        <img src="photos/ndole.jpg" alt="Ndole">
+                        <div class="price">From 1500₹</div>
+                        <span id="love-count" class="love-count">
+                          <i class="fas fa-heart love-icon-text"></i>
+                        </span>
+                        <button class="add-to-cart-button">Add to Cart</button>
+                        <a href="https://wa.me/qr/PHYYQKIWBXKUD1" class="btn">Order Now</a>
+                    </div>
+                    <div class="box">
+                        <h3>Bitterleaf Soup</h3>
+                        <img src="photos/n Bitterleaf Soup .jpg" alt="Bitterleaf Soup">
+                        <div class="price">From 800₹</div>
+                        <span id="love-count" class="love-count">
+                          <i class="fas fa-heart love-icon-text"></i>
+                        </span>
+                        <button class="add-to-cart-button">Add to Cart</button>
+                        <a href="https://wa.me/qr/PHYYQKIWBXKUD1" class="btn">Order Now</a>
+                    </div>
+                    <div class="box">
+                        <h3>Chicken Stew</h3>
+                        <img src="photos/Nigerian Turkey Stew.jpg" alt="Chicken Stew">
+                        <div class="price">From 800₹</div>
+                        <span id="love-count" class="love-count">
+                          <i class="fas fa-heart love-icon-text"></i>
+                        </span>
+                        <button class="add-to-cart-button">Add to Cart</button>
+                        <a href="https://wa.me/qr/PHYYQKIWBXKUD1" class="btn">Order Now</a>
+                    </div>
+                    <div class="box">
+                        <h3>Turkey Stew</h3>
+                        <img src="photos/Nigerian Beef Stew.jpg" alt="Turkey Stew">
+                        <div class="price">From 1000₹</div>
+                        <span id="love-count" class="love-count">
+                          <i class="fas fa-heart love-icon-text"></i>
+                        </span>
+                        <button class="add-to-cart-button">Add to Cart</button>
+                        <a href="https://wa.me/qr/PHYYQKIWBXKUD1" class="btn">Order Now</a>
+                    </div>
+                    <div class="box">
+                        <h3>Fish Stew</h3>
+                        <img src="photos/Tilapia Fish Stew Delight_🐟🍲.jpg" alt="Fish Stew">
+                        <div class="price">From 800₹</div>
+                        <span id="love-count" class="love-count">
+                          <i class="fas fa-heart love-icon-text"></i>
+                        </span>
+                        <button class="add-to-cart-button">Add to Cart</button>
+                        <a href="https://wa.me/qr/PHYYQKIWBXKUD1" class="btn">Order Now</a>
+                    </div>
+                    <div class="box">
+                        <h3>Goat Meat Stew</h3>
+                        <img src="photos/Nigerian Turkey Stew.jpg" alt="Goat Meat Stew">
+                        <div class="price">From 800₹</div>
+                        <span id="love-count" class="love-count">
+                          <i class="fas fa-heart love-icon-text"></i>
+                        </span>
+                        <button class="add-to-cart-button">Add to Cart</button>
+                        <a href="https://wa.me/qr/PHYYQKIWBXKUD1" class="btn">Order Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+                <!-- rice dishes-->
+                <h2>Rice Dishes</h2>
+<div class="menu-slider">
+    <div class="W">
+        <div class="slide">
+            <div class="box-container">
+                <div class="box">
+                    <h3>Jollof Rice</h3>
+                    <img src="photos/smokey jollof .jpg" alt="jollof rice">
+                    <div class="price">From 800₹</div>
+                    <span id="love-count" class="love-count">
+                      <i class="fas fa-heart love-icon-text"></i>
+                    </span>
+                    <button class="add-to-cart-button">Add to Cart</button>
+                    <a href="https://wa.me/qr/PHYYQKIWBXKUD1" class="btn">Order Now</a>
+                </div>
+
+                <div class="box">
+                    <h3>Fried Rice</h3>
+                    <img src="photos/Fried Rice.jpg" alt="fried rice">
+                    <div class="price">From 800₹</div>
+                    <span id="love-count" class="love-count">
+                      <i class="fas fa-heart love-icon-text"></i>
+                    </span>
+                    <button class="add-to-cart-button">Add to Cart</button>
+                    <a href="https://wa.me/qr/PHYYQKIWBXKUD1" class="btn">Order Now</a>
+                </div>
+
+                <div class="box">
+                    <h3>Native Rice</h3>
+                    <img src="photos/nativve rice.jpg" alt="native rice">
+                    <div class="price">From 800₹</div>
+                    <span id="love-count" class="love-count">
+                      <i class="fas fa-heart love-icon-text"></i>
+                    </span>
+                    <button class="add-to-cart-button">Add to Cart</button>
+                    <a href="https://wa.me/qr/PHYYQKIWBXKUD1" class="btn">Order Now</a>
+                </div>
+
+                <div class="box">
+                    <h3>Coconut Fried Rice</h3>
+                    <img src="photos/Coconut Fried Rice.jpg" alt="coconut fried rice">
+                    <div class="price">From 800₹</div>
+                    <span id="love-count" class="love-count">
+                      <i class="fas fa-heart love-icon-text"></i>
+                    </span>
+                    <button class="add-to-cart-button">Add to Cart</button>
+                    <a href="https://wa.me/qr/PHYYQKIWBXKUD1" class="btn">Order Now</a>
+                </div>
+
+                <div class="box">
+                    <h3>Jollof Rice and Beans</h3>
+                    <img src="photos/Nigerian Jollof rice and beans recipe.jpg" alt="Jollof Rice and Beans">
+                    <div class="price">From 1000₹</div>
+                    <span id="love-count" class="love-count">
+                      <i class="fas fa-heart love-icon-text"></i>
+                    </span>
+                    <button class="add-to-cart-button">Add to Cart</button>
+                    <a href="https://wa.me/qr/PHYYQKIWBXKUD1" class="btn">Order Now</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!--porridge-->
+<h2>Porridges</h2>
+<div class="menu-slider">
+    <div class="W">
+        <div class="slide">
+            <div class="box-container">
+                <div class="box">
+                    <h3>Bean Porridge</h3>
+                    <img src="photos/bean-porr.png" alt="Bean Porridge">
+                    <div class="price">From 800₹</div>
+                    <span id="love-count" class="love-count">
+                      <i class="fas fa-heart love-icon-text"></i>
+                    </span>
+                    <button class="add-to-cart-button">Add to Cart</button>
+                    <a href="https://wa.me/qr/PHYYQKIWBXKUD1" class="btn">Order Now</a>
+                </div>
+
+                <div class="box">
+                    <h3>Plantain Porridge</h3>
+                    <img src="photos/plantain porrige .jpg" alt="Plantain Porridge">
+                    <div class="price">From 800₹</div>
+                    <span id="love-count" class="love-count">
+                      <i class="fas fa-heart love-icon-text"></i>
+                    </span>
+                    <button class="add-to-cart-button">Add to Cart</button>
+                    <a href="https://wa.me/qr/PHYYQKIWBXKUD1" class="btn">Order Now</a>
+                </div>
+
+                <div class="box">
+                    <h3>Potato Porridge/Hot Pot</h3>
+                    <img src="photos/potato Porridge).jpg" alt="Potato Porridge/Hot Pot">
+                    <div class="price">From 800₹</div>
+                    <span id="love-count" class="love-count">
+                      <i class="fas fa-heart love-icon-text"></i>
+                    </span>
+                    <button class="add-to-cart-button">Add to Cart</button>
+                    <a href="https://wa.me/qr/PHYYQKIWBXKUD1" class="btn">Order Now</a>
+                </div>
+
+                <div class="box">
+                    <h3>Cocoyam Porridge</h3>
+                    <img src="photos/cocoyam porrige.png" alt="Cocoyam Porridge">
+                    <div class="price">From 800₹</div>
+                    <span id="love-count" class="love-count">
+                      <i class="fas fa-heart love-icon-text"></i>
+                    </span>
+                    <button class="add-to-cart-button">Add to Cart</button>
+                    <a href="https://wa.me/qr/PHYYQKIWBXKUD1" class="btn">Order Now</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--peppersoups-->
+
+<h2>Pepper Soup</h2>
+<div class="menu-slider">
+    <div class="W">
+        <div class="slide">
+            <div class="box-container">
+                <div class="box">
+                    <h3>Fish Pepper Soup</h3>
+                    <img src="photos/Nigerian Peppersoup.jpg" alt="Fish Pepper Soup">
+                    <div class="price">From 800₹</div>
+                    <span id="love-count" class="love-count">
+                      <i class="fas fa-heart love-icon-text"></i>
+                    </span>
+                    <button class="add-to-cart-button">Add to Cart</button>
+                    <a href="https://wa.me/qr/PHYYQKIWBXKUD1" class="btn">Order Now</a>
+                </div>
+
+                <div class="box">
+                    <h3>Chicken Pepper Soup</h3>
+                    <img src="photos/Chicken Peppersoup.jpg" alt="Chicken Pepper Soup">
+                    <div class="price">From 800₹</div>
+                    <span id="love-count" class="love-count">
+                      <i class="fas fa-heart love-icon-text"></i>
+                    </span>
+                    <button class="add-to-cart-button">Add to Cart</button>
+                    <a href="https://wa.me/qr/PHYYQKIWBXKUD1" class="btn">Order Now</a>
+                </div>
+
+                <div class="box">
+                    <h3>Goat Meat Pepper Soup</h3>
+                    <img src="photos/ Goatmeat PepperSoup s.jpg" alt="Goat Meat Pepper Soup">
+                    <div class="price">From 800₹</div>
+                    <span id="love-count" class="love-count">
+                      <i class="fas fa-heart love-icon-text"></i>
+                    </span>
+                    <button class="add-to-cart-button">Add to Cart</button>
+                    <a href="https://wa.me/qr/PHYYQKIWBXKUD1" class="btn">Order Now</a>
+                </div>
+
+                <div class="box">
+                    <h3>Assorted Meat Pepper Soup</h3>
+                    <img src="photos/assorted peppersoupJPG" alt="Assorted Meat Pepper Soup">
+                    <div class="price">From 1000₹</div>
+                    <span id="love-count" class="love-count">
+                      <i class="fas fa-heart love-icon-text"></i>
+                    </span>
+                    <button class="add-to-cart-button">Add to Cart</button>
+                    <a href="https://wa.me/qr/PHYYQKIWBXKUD1" class="btn">Order Now</a>
+                </div>
+
+                <div class="box">
+                    <h3>Catfish Pepper Soup</h3>
+                    <img src="photos/Catfish pepper soup.jpg" alt="Catfish Pepper Soup">
+                    <div class="price">From 800₹</div>
+                    <span id="love-count" class="love-count">
+                      <i class="fas fa-heart love-icon-text"></i>
+                    </span>
+                    <button class="add-to-cart-button">Add to Cart</button>
+                    <a href="https://wa.me/qr/PHYYQKIWBXKUD1" class="btn">Order Now</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--sides-->
+
+<h2>Sides</h2>
+<div class="menu-slider">
+    <div class="W">
+        <div class="slide">
+            <div class="box-container">
+                <div class="box">
+                    <h3>White Rice</h3>
+                    <img src="photos/whitei Rice.jpg" alt="White Rice">
+                    <div class="price">N/A</div>
+                    <span id="love-count" class="love-count">
+                      <i class="fas fa-heart love-icon-text"></i>
+                    </span>
+                    <button class="add-to-cart-button">Add to Cart</button>
+
+                    <a href="https://wa.me/qr/PHYYQKIWBXKUD1" class="btn">Order Now</a>
+                </div>
+
+                <div class="box">
+                    <h3>Plantain</h3>
+                    <img src="photos/plantains.jpg" alt="Plantain">
+                    <div class="price">N/A</div>
+                    <span id="love-count" class="love-count">
+                      <i class="fas fa-heart love-icon-text"></i>
+                    </span>
+                    <button class="add-to-cart-button">Add to Cart</button>
+                    <a href="https://wa.me/qr/PHYYQKIWBXKUD1" class="btn">Order Now</a>
+                </div>
+
+                <div class="box">
+                    <h3>Semo</h3>
+                    <img src="photos/ Coming Soon.png" alt="Semo">
+                    <div class="price">N/A</div>
+                    <span id="love-count" class="love-count">
+                      <i class="fas fa-heart love-icon-text"></i>
+                    </span>
+                    <button class="add-to-cart-button">Add to Cart</button>
+                    <a href="https://wa.me/qr/PHYYQKIWBXKUD1" class="btn">Order Now</a>
+                </div>
+
+                <div class="box">
+                    <h3>Wheat Flour</h3>
+                    <img src="photos/ Coming Soon.png" alt="Wheat Flour">
+                    <div class="price">N/A</div>
+                    <span id="love-count" class="love-count">
+                      <i class="fas fa-heart love-icon-text"></i>
+                    </span>
+                    <button class="add-to-cart-button">Add to Cart</button>
+                    <a href="https://wa.me/qr/PHYYQKIWBXKUD1" class="btn">Order Now</a>
+                </div>
+
+
+                <div class="box">
+                  <h3>Eba</h3>
+                  <img src="photos/ Coming Soon.png" alt="Wheat Flour">
+                  <div class="price">N/A</div>
+                  <span id="love-count" class="love-count">
+                    <i class="fas fa-heart love-icon-text"></i>
+                  </span>
+                  <button class="add-to-cart-button">Add to Cart</button>
+                  <a href="https://wa.me/qr/PHYYQKIWBXKUD1" class="btn">Order Now</a>
+              </div>
+
+
+                <div class="box">
+                    <h3>Coleslaw</h3>
+                    <img src="photos/Coleslaw.jpg" alt="Coleslaw">
+                    <div class="price">200₹</div>
+                    <span id="love-count" class="love-count">
+                      <i class="fas fa-heart love-icon-text"></i>
+                    </span>
+                    <button class="add-to-cart-button">Add to Cart</button>
+                    <a href="https://wa.me/qr/PHYYQKIWBXKUD1" class="btn">Order Now</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--sides-->
+
+<h2>Finger Foods</h2>
+<div class="menu-slider">
+    <div class="W">
+        <div class="slide">
+            <div class="box-container">
+                <div class="box">
+                    <h3>Puff Puff</h3>
+                    <img src="photos/Nigerian Puff Puff.jpg" alt="Puff Puff">
+                    <div class="price">500₹</div>
+                    <span id="love-count" class="love-count">
+                      <i class="fas fa-heart love-icon-text"></i>
+                    </span>
+                    <button class="add-to-cart-button">Add to Cart</button>
+                    <a href="https://wa.me/qr/PHYYQKIWBXKUD1" class="btn">Order Now</a>
+                </div>
+
+              
+
+              <div class="box">
+                  <h3>Chin Chin</h3>
+                  <img src="photos/Chin chin recipe!.jpg" alt="Chin Chin">
+                  <div class="price">N/A</div>
+                  <span id="love-count" class="love-count">
+                    <i class="fas fa-heart love-icon-text"></i>
+                  </span>
+                  <button class="add-to-cart-button">Add to Cart</button>
+                  <a href="https://wa.me/qr/PHYYQKIWBXKUD1" class="btn">Order Now</a>
+              </div>
+
+
+              <div class="box">
+                <h3> small Meat Pies</h3>
+                <p> 6 pcs</p>
+                <img src="photos/small pies.jpeg" alt=" big Meat Pie">
+                <div class="price">800</div>
+                
+                <a href="https://wa.me/qr/PHYYQKIWBXKUD1" class="btn">Order Now</a>
+            </div>
+
+              <div class="box">
+                  <h3> big Meat Pies</h3>
+                  <p> 5 pcs</p>
+                  <img src="photos/Nigerian meat pie.jpg" alt=" big Meat Pie">
+                  <div class="price">800</div>
+                  <span id="love-count" class="love-count">
+                    <i class="fas fa-heart love-icon-text"></i>
+                  </span>
+                  <button class="add-to-cart-button">Add to Cart</button>
+                  <a href="https://wa.me/qr/PHYYQKIWBXKUD1" class="btn">Order Now</a>
+              </div>
+
+
+              <div class="box">
+                <h3> Egusi pudding</h3>
+                <img src="photos/egusi pudding.png" alt=" Egusi pudding">
+                <div class="price">800</div>
+                <span id="love-count" class="love-count">
+                  <i class="fas fa-heart love-icon-text"></i>
+                </span>
+                <button class="add-to-cart-button">Add to Cart</button>
+                <a href="https://wa.me/qr/PHYYQKIWBXKUD1" class="btn">Order Now</a>
+            </div>
+
+              <div class="box">
+                  <h3>Drop Donuts</h3>
+                  <img src="photos/ Drop DONUTS.jpg" alt=" DropDonuts">
+                  <div class="price">500₹</div>
+                  <span id="love-count" class="love-count">
+                    <i class="fas fa-heart love-icon-text"></i>
+                  </span>
+                  <button class="add-to-cart-button">Add to Cart</button>
+                  <a href="https://wa.me/qr/PHYYQKIWBXKUD1" class="btn">Order Now</a>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+
+<p class="NB">
+  Please note that we require a minimum of 2 hours from order
+ confirmation to prepare your food. This preparation time does
+ not include the delivery time, which may vary based on distance
+ and traffic conditions.<br>
+ Also be aware that our meals may contain ingredients such as
+ nuts, dairy products, gluten, shellfish, crayfish, or fish. Please let
+ us know of any dietary restrictions or allergy requirements.
+ Thank You.<br>
+
+
+  </p>
+       
+
+
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- footer section starts -->
+<footer>
+  <div class="footer-content">
+    <div class="footer-logo">
+      <img src="photos/transparent logo.png" alt="Flora's African Restaurant Logo">
+    </div>
+
+    <div class="footer-nav">
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="about.html">About</a></li>
+       <li> <a href="menu.html">Menu</a></li>
+       <li><a href="reviews.html">Reviews</a></li>
+       <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+
+    <div class="social-links">
+      <a href="https://www.instagram.com/florasafricanrestaurant/" target="_blank" aria-label="Instagram">
+        <i class="fab fa-instagram"></i>
+
+      </a>
+      <a href="https://www.facebook.com/florasafricankitcheninindia" target="_blank" aria-label="Facebook">
+        <i class="fab fa-facebook-f"></i>
+      </a>
+      <a href="https://maps.app.goo.gl/oLtjZ4AtN3d46u7z8" target="_blank" aria-label="Google My Business">
+        <i class="fas fa-map-marker-alt"></i>
+
+      </a>
+    </div>
+
+
+    <div class="input-box">
+      <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3506.367954804913!2d77.18633147575257!3d28
+      .49857527573816!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d1f85d8dcbbed%3A0xd4bcfa69b60407d1!2sFlora&#39;s%20African%20Restaurant!5e0!3m2!1sen!2sin!4v1725307547415!5m2!1sen!2sin"
+       width="250" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"> </iframe>
+    </div>
+    
+
+    <div class="contact-form">
+      <h4>Contact Us</h4>
+      <form action="your-contact-form-handler-url" method="post">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <textarea name="message" placeholder="Your Message" required></textarea>
+        <button type="submit">Send</button>
+      </form>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>© 2024 ALL RIGHTS RESERVED FLORA'S AFRICAN RESTAURANT</p>
+  </div>
+</footer>
+
+<!-- footer section ends -->
+
+</body>
+</html>

@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flora's African Restaurant Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+    <script src="script.js" defer></script>
+
+</head>
+<section class="header">
+  <a href="#" class="logo">
+      <i class="fas fa-utensils"></i> Flora's Restaurant
+  </a>
+  <nav class="nav-bar">
+    <a href="index.html">Home</a>
+      <a href="#about.html">About</a>
+      <a href="menu.html">Menu</a>
+      <a href="reviews.html">Reviews</a>
+      <a href="contact.html">Contact</a>
+  </nav>
+  <div id="menu-btn" class="fas fa-bars"></div>
+</section>
+
+<nav class="nav-about">
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="reviews.html">Reviews</a></li>
+    </ul>
+</nav>
+<!---body -->
+<body>
+<p class="review-intro" >
+    <spam class="highlight">WE'D LOVE TO HEAR FROM YOU!</spam>
+
+    Your feedback means the world to us. Please take a moment to leave a review and let us know how we're doing and how we can make your experience even better.
+
+</p>
+<!-- reviews section starts -->
+<section class="reviews-container">
+    <div class="reviews active" id="reviews">
+        <h3>Customer Reviews</h3>
+
+        <div class="review">
+            <div class="review-content">
+                <p>I always love Flora restaurant. Apart from the exceptional quality of their dishes, we can only love the kindness and charms they have in welcoming customers. Recommended dishes: Okra Soup</p>
+                <div class="review-author">
+                    <span class="author-name">Didier KONZOLI</span>
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <div class="review-date">2 months ago</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="review">
+            <div class="review-content">
+                <p> i really like the food </p>
+                <div class="review-author">
+                    <span class="author-name">bryan</span>
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star "></i>
+                    </div>
+                    <div class="review-date">2 days ago</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="review">
+            <div class="review-content">
+                <p> Enjoyed the food at this place, delicious 😋 especially fish stew</p>
+                <div class="review-author">
+                    <span class="author-name">Sabato</span>
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star "></i>
+                    </div>
+                    <div class="review-date">5 days ago</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="review">
+            <div class="review-content">
+                <p>If you're looking for authentic African cuisine, Flora's is the place to go. The Okra Soup was a highlight of my visit!</p>
+                <div class="review-author">
+                    <span class="author-name">Grace Rue</span>
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <div class="review-date">2 weeks ago</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="review">
+            <div class="review-content">
+                <p>Best African food in Delhi hands down 🔥</p>
+                <div class="review-author">
+                    <span class="author-name">Raj</span>
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <div class="review-date">1 month ago</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="review">
+            <div class="review-content">
+                <p>Enjoyed the food at this place, delicious 😋 especially fish</p>
+                <div class="review-author">
+                    <span class="author-name">Sabato</span>
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <div class="review-date">1 week ago</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- reviews section ends -->
+
+
+
+  <!-- review submission section starts -->
+<section class="review-submission">
+    <h3>Submit Your Review</h3>
+    <form action="your-review-form-handler-url" method="post" enctype="multipart/form-data">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" placeholder="Your Name" required>
+      
+      <label for="rating">Rating:</label>
+      <div id="rating" name="rating">
+        <label><input type="radio" name="rating" value="5" required> 5 Stars</label>
+        <label><input type="radio" name="rating" value="4"> 4 Stars</label>
+        <label><input type="radio" name="rating" value="3"> 3 Stars</label>
+        <label><input type="radio" name="rating" value="2"> 2 Stars</label>
+        <label><input type="radio" name="rating" value="1"> 1 Star</label>
+      </div>
+  
+      <label for="picture">Upload a Picture (optional):</label>
+      <input type="file" id="picture" name="picture" accept="image/*">
+      
+      <label for="message" optional>Your Review :</label>
+      <textarea id="message" name="message" placeholder="Write your review here" required></textarea>
+      
+      <button type="submit">Submit Review</button>
+    </form>
+  </section>
+  <!-- review submission section ends -->
+  
+
+<!-- footer section starts -->
+<footer>
+  <div class="footer-content">
+    <div class="footer-logo">
+      <img src="photos/transparent logo.png" alt="Flora's African Restaurant Logo">
+    </div>
+
+    <div class="footer-nav">
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="about.html">About</a></li>
+       <li> <a href="menu.html">Menu</a></li>
+       <li><a href="reviews.html">Reviews</a></li>
+       <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+
+    <div class="social-links">
+      <a href="https://www.instagram.com/florasafricanrestaurant/" target="_blank" aria-label="Instagram">
+        <i class="fab fa-instagram"></i>
+
+      </a>
+      <a href="https://www.facebook.com/florasafricankitcheninindia" target="_blank" aria-label="Facebook">
+        <i class="fab fa-facebook-f"></i>
+      </a>
+      <a href="https://maps.app.goo.gl/oLtjZ4AtN3d46u7z8" target="_blank" aria-label="Google My Business">
+        <i class="fas fa-map-marker-alt"></i>
+
+      </a>
+    </div>
+
+
+    <div class="input-box">
+      <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3506.367954804913!2d77.18633147575257!3d28
+      .49857527573816!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d1f85d8dcbbed%3A0xd4bcfa69b60407d1!2sFlora&#39;s%20African%20Restaurant!5e0!3m2!1sen!2sin!4v1725307547415!5m2!1sen!2sin"
+       width="250" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"> </iframe>
+    </div>
+    
+
+    <div class="contact-form">
+      <h4>Contact Us</h4>
+      <form action="your-contact-form-handler-url" method="post">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <textarea name="message" placeholder="Your Message" required></textarea>
+        <button type="submit">Send</button>
+      </form>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>© 2024 ALL RIGHTS RESERVED FLORA'S AFRICAN RESTAURANT</p>
+  </div>
+</footer>
+
+<!-- footer section ends -->
+
+</body>
+</html>
+
+

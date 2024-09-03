@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flora's African Restaurant Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+</head>
+
+<body>
+    <section class="header">
+        <a href="#" class="logo">
+            <i class="fas fa-utensils"></i> Flora's Restaurant
+        </a>
+        <nav class="nav-bar">
+            <a href="#home">Home</a>
+            <li><a href="about.html">About</a></li>
+            <a href="menu.html">Menu</a>
+            <a href="reviews.html">Reviews</a>
+            <a href="contact.html">Contact</a>
+
+  <!-- Cart Icon -->
+  <div id="cart-icon" class="cart-icon">
+    <span class="cart-icon-text">🛒</span>
+    <span id="cart-count" class="cart-count">0</span>
+</div>
+        </nav>
+        <div id="menu-btn" class="fas fa-bars"></div>
+    </section>
+
+
+<!-- Cart Modal -->
+<div id="cart-modal" class="cart-modal">
+  <div class="cart-modal-content">
+    <span class="close">&times;</span>
+    <h2>Your Cart</h2>
+    <ul id="cart-items">
+      <!-- Cart items will be added here dynamically -->
+    </ul>
+    <div class="cart-total">
+      <strong>Total:</strong> <span id="cart-total">0₹</span>
+    </div>
+    <button id="checkout-button">Checkout</button>
+  </div>
+</div>
+
+<!--cart ends-->
+
+
+
+    <section class="home" id="home">
+        <div class="swiper home-slider">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide" style="background: url(photos/beans.jpg) no-repeat;">
+                    <div class="content">
+                        <span>Cultural Cuisine</span>
+                        <h3>Elevate Your Palate</h3>
+                        <a href="menu.html" class="btn">Get Started</a>
+                    </div>
+                </div>
+                <div class="swiper-slide" style="background: url(photos/suya.jpg) no-repeat;">
+                    <div class="content">
+                        <span>Outstanding Food</span>
+                        <h3>Authentic African Flavors</h3>
+                        <a href="menu.html"class="btn">Get Started</a>
+                    </div>
+                </div>
+                <div class="swiper-slide" style="background: url(photos/jollof.JPG) no-repeat;">
+                    <div class="content">
+                        <span>Spicy Delights</span>
+                        <h3>Flavors You Love</h3>
+                        <a href="menu.html" class="btn">Get Started</a>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+    </section>
+
+    <!--home section ends-->
+<!--product category section starts-->
+<section class="product-category" id="product-category">
+    <div class="heading">
+        <h3>Product Category</h3>
+    </div>
+
+    <div class="swiper menu-slider">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide slide" data-name="food-1">
+                <img src="photos/Ogbono.jpg" alt="ogbono soup">
+                <h3> Soups and Stews</h3>
+                <a href="menu.html">
+                <div class="price">From  800₹</div>
+                </a>
+            </div>
+            <div class="swiper-slide slide" data-name="food-2">
+                <img src="photos/ Plantain.jpg" alt="Chicken Stew">
+                <h3>Complements</h3>
+                <a href="menu.html">
+                <div class="price">From 800₹</div>
+                </a>
+            </div>
+            <div class="swiper-slide slide" data-name="food-3">
+                <img src="photos/grilledf.jpg" alt="Okra Soup">
+                <h3>Barbecue</h3>
+                <a href="menu.html">
+                <div class="price"> From 1200₹</div>
+                </a>
+            </div>
+            <div class="swiper-slide slide" data-name="food-4">
+                <img src="photos/bean-porr.png" alt="Vegetable Soup">
+                <h3>Porridge</h3>
+                <a href="menu.html">
+                <div class="price">800₹</div>
+                </a>
+            </div>
+        </div>
+        <div class="swiper-pagination"></div>
+    </div>
+</section>
+<!--product categorysection ends-->
+
+<!--food preview section starts-->
+<section class="food-preview-container">
+  <div id="close-preview" class="fas fa-times"></div>
+
+  <div class="food-preview" data-target="food-1">
+    <img src="photos/Ogbono.jpg" alt="ogbono soup">
+    <h3>Soups and Stews</h3>
+    <div class="stars">
+      <i class="fas fa-star"></i>
+      <i class="fas fa-star"></i>
+      <i class="fas fa-star"></i>
+      <i class="fas fa-star"></i>
+      <i class="fas fa-star"></i>
+    </div>
+    <div class="price">From 800₹</div>
+    <a href="#" class="btn">Get Started</a>
+  </div>
+
+  <div class="food-preview" data-target="food-2">
+    <img src="photos/Plantain.jpg" alt="Plantain">
+    <h3>Complements</h3>
+    <div class="stars">
+      <i class="fas fa-star"></i>
+      <i class="fas fa-star"></i>
+      <i class="fas fa-star"></i>
+      <i class="fas fa-star"></i>
+      <i class="fas fa-star"></i>
+    </div>
+    <div class="price">From 800₹</div>
+    <a href="#" class="btn">Get Started</a>
+  </div>
+
+  <div class="food-preview" data-target="food-3">
+    <img src="photos/grilledf.jpg" alt="Grilled Fish">
+    <h3>Barbecue</h3>
+    <div class="stars">
+      <i class="fas fa-star"></i>
+      <i class="fas fa-star"></i>
+      <i class="fas fa-star"></i>
+      <i class="fas fa-star"></i>
+      <i class="fas fa-star"></i>
+    </div>
+    <div class="price">From 1200₹</div>
+    <a href="#" class="btn">Get Started</a>
+  </div>
+
+  <div class="food-preview" data-target="food-4">
+    <img src="photos/bean-porr.png" alt="Bean Porridge">
+    <h3>Porridge</h3>
+    <div class="stars">
+      <i class="fas fa-star"></i>
+      <i class="fas fa-star"></i>
+      <i class="fas fa-star"></i>
+      <i class="fas fa-star"></i>
+      <i class="fas fa-star"></i>
+    </div>
+    <div class="price">From 800₹</div>
+    <a href="#" class="btn">Get Started</a>
+  </div>   
+</section>
+<!--food preview section ends-->
+
+
+<!-- reviews section starts -->
+<section class="reviews-container">
+    <div class="reviews active" id="reviews">
+        <h3>Customer Reviews</h3>
+
+        <div class="review">
+            <div class="review-content">
+                <p>I always love Flora restaurant. Apart from the exceptional quality of their dishes, we can only love the kindness and charms they have in welcoming customers. Recommended dishes: Okra Soup</p>
+                <div class="review-author">
+                    <span class="author-name">Didier KONZOLI</span>
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <div class="review-date">2 months ago</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="review">
+            <div class="review-content">
+                <p> i really like the food </p>
+                <div class="review-author">
+                    <span class="author-name">bryan</span>
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star "></i>
+                    </div>
+                    <div class="review-date">2 days ago</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="review">
+            <div class="review-content">
+                <p> Enjoyed the food at this place, delicious 😋 especially fish stew</p>
+                <div class="review-author">
+                    <span class="author-name">Sabato</span>
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star "></i>
+                    </div>
+                    <div class="review-date">5 days ago</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="review">
+            <div class="review-content">
+                <p>If you're looking for authentic African cuisine, Flora's is the place to go. The Okra Soup was a highlight of my visit!</p>
+                <div class="review-author">
+                    <span class="author-name">Grace Rue</span>
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <div class="review-date">2 weeks ago</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="review">
+            <div class="review-content">
+                <p>Best African food in Delhi hands down 🔥</p>
+                <div class="review-author">
+                    <span class="author-name">Raj</span>
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <div class="review-date">1 month ago</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="review">
+            <div class="review-content">
+                <p>Enjoyed the food at this place, delicious 😋 especially fish</p>
+                <div class="review-author">
+                    <span class="author-name">Sabato</span>
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <div class="review-date">1 week ago</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- reviews section ends -->
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- WhatsApp link section -->
+<div class="whatsapp-link">
+  <a href="https://wa.me/qr/PHYYQKIWBXKUD1" target="_blank" aria-label="WhatsApp">
+    <img src="photos/Whatsapp Logo png.jpg" alt="WhatsApp Icon">
+    </a>
+  </div>
+<!--whatsapp link direction ends -->  
+
+
+
+<!-- footer section starts -->
+<footer>
+    <div class="footer-content">
+      <div class="footer-logo">
+        <img src="photos/transparent logo.png" alt="Flora's African Restaurant Logo">
+      </div>
+  
+      <div class="footer-nav">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="about.html">About</a></li>
+         <li> <a href="menu.html">Menu</a></li>
+         <li><a href="reviews.html">Reviews</a></li>
+         <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+  
+      <div class="social-links">
+        <a href="https://www.instagram.com/florasafricanrestaurant/" target="_blank" aria-label="Instagram">
+          <i class="fab fa-instagram"></i>
+
+        </a>
+        <a href="https://www.facebook.com/florasafricankitcheninindia" target="_blank" aria-label="Facebook">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="https://maps.app.goo.gl/oLtjZ4AtN3d46u7z8" target="_blank" aria-label="Google My Business">
+          <i class="fas fa-map-marker-alt"></i>
+
+        </a>
+      </div>
+  
+
+      <div class="input-box">
+        <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3506.367954804913!2d77.18633147575257!3d28
+        .49857527573816!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d1f85d8dcbbed%3A0xd4bcfa69b60407d1!2sFlora&#39;s%20African%20Restaurant!5e0!3m2!1sen!2sin!4v1725307547415!5m2!1sen!2sin"
+         width="250" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"> </iframe>
+      </div>
+      
+
+      <div class="contact-form">
+        <h4>Contact Us</h4>
+        <form action="your-contact-form-handler-url" method="post">
+          <input type="text" name="name" placeholder="Your Name" required>
+          <input type="email" name="email" placeholder="Your Email" required>
+          <textarea name="message" placeholder="Your Message" required></textarea>
+          <button type="submit">Send</button>
+        </form>
+      </div>
+    </div>
+  
+    <div class="footer-bottom">
+      <p>© 2024 ALL RIGHTS RESERVED FLORA'S AFRICAN RESTAURANT</p>
+    </div>
+</footer>
+
+  <!-- footer section ends -->
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="script.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+</body>
+
+</html>
